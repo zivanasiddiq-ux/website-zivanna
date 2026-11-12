@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UMKM Lokal — Katalog Produk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">Dukung produk lokal • Pilihan UMKM Indonesia dengan cerita di setiap produk</div>
+  <header>
+    <nav class="nav">
+      <a class="brand" href="#beranda"><span class="brand-mark">✿</span><span>Zivanna |<span style="color:var(--green)"> UMKM Lokal.</span></span></a>
+      <div class="navlinks">
+        <a href="#beranda">Beranda</a><a href="#katalog">Katalog Produk</a><a href="#tentang">Tentang Kami</a><a href="#kontak">Kontak</a>
+      </div>
+      <a class="nav-cta" href="#katalog">Jelajahi Produk <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div>
+        <span class="eyebrow">✦ Bangga buatan lokal</span>
+        <h1>Produk lokal,<br><span>cerita istimewa.</span></h1>
+        <p>Temukan pilihan produk UMKM yang dibuat dengan sepenuh hati. Dari camilan rumahan sampai kerajinan unik, dukung usaha lokal mulai dari sini.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#katalog">Lihat Katalog <span>→</span></a>
+          <a class="btn secondary" href="#tentang">Kenali Kami</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Ilustrasi produk UMKM">
+        <div class="hero-products">
+          <div class="hero-tile">🧺</div><div class="hero-tile">🍯</div>
+          <div class="hero-tile">☕</div><div class="hero-tile">👜</div>
+        </div>
+        <div class="hero-note"><strong>Dibuat dengan hati ♡</strong>Produk pilihan usaha lokal</div>
+      </div>
+    </section>
+
+    <section class="benefits" aria-label="Keunggulan">
+      <div class="benefit"><div class="benefit-icon">🌱</div><div><strong>Dukung usaha lokal</strong><small>Bantu UMKM terus berkembang</small></div></div>
+      <div class="benefit"><div class="benefit-icon">🤲</div><div><strong>Dibuat sepenuh hati</strong><small>Karya dan produk pilihan</small></div></div>
+      <div class="benefit"><div class="benefit-icon">📦</div><div><strong>Mudah ditemukan</strong><small>Jelajahi produk dalam satu tempat</small></div></div>
+    </section>
+
+    <section class="catalog" id="katalog">
+      <div class="section-inner">
+        <div class="section-head">
+          <div><div class="section-kicker">Katalog pilihan</div><h2>Temukan favoritmu</h2><p>Jelajahi produk berdasarkan kategori atau cari produk yang kamu inginkan.</p></div>
+          <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Cari nama produk..." aria-label="Cari produk"></label>
+        </div>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Semua">Semua Produk</button>
+          <button class="filter" data-category="Makanan">Makanan</button>
+          <button class="filter" data-category="Minuman">Minuman</button>
+          <button class="filter" data-category="Kerajinan">Kerajinan</button>
+          <button class="filter" data-category="Fashion">Fashion</button>
+        </div>
+        <div class="products" id="products">
+          <article class="product" data-category="Makanan" data-name="Keripik Pisang">
+            <div class="product-image"><span class="tag">Terlaris</span><img src="images/keripik-pisang.jpg" alt="Keripik pisang"></div>
+            <div class="product-info"><div class="category">Makanan</div><h3>Keripik Pisang</h3><div class="product-desc">Camilan renyah dengan rasa manis gurih, cocok untuk teman santai.</div><div class="product-bottom"><span class="price">Rp18.000</span><button class="add" aria-label="Pilih Keripik Pisang" data-product="Keripik Pisang">+</button></div></div>
+          </article>
+          <article class="product" data-category="Minuman" data-name="Kopi Bubuk Lokal">
+            <div class="product-image"><span class="tag">Favorit</span><img src="images/kopi-bubuk.jpg" alt="Kopi bubuk lokal"></div>
+            <div class="product-info"><div class="category">Minuman</div><h3>Kopi Bubuk Lokal</h3><div class="product-desc">Aroma kopi khas untuk menemani pagi dan waktu istirahatmu.</div><div class="product-bottom"><span class="price">Rp35.000</span><button class="add" aria-label="Pilih Kopi Bubuk Lokal" data-product="Kopi Bubuk Lokal">+</button></div></div>
+          </article>
+          <article class="product" data-category="Makanan" data-name="Madu Hutan">
+            <div class="product-image"><img src="images/madu-hutan.jpg" alt="Madu hutan dalam botol"></div>
+            <div class="product-info"><div class="category">Makanan</div><h3>Madu Hutan</h3><div class="product-desc">Madu pilihan dengan rasa khas, cocok menjadi stok di rumah.</div><div class="product-bottom"><span class="price">Rp48.000</span><button class="add" aria-label="Pilih Madu Hutan" data-product="Madu Hutan">+</button></div></div>
+          </article>
+          <article class="product" data-category="Kerajinan" data-name="Tas Anyaman">
+            <div class="product-image"><img src="images/tas-anyaman.jpg" alt="Tas anyaman"></div>
+            <div class="product-info"><div class="category">Kerajinan</div><h3>Tas Anyaman</h3><div class="product-desc">Tas handmade dengan sentuhan tradisional dan gaya modern.</div><div class="product-bottom"><span class="price">Rp75.000</span><button class="add" aria-label="Pilih Tas Anyaman" data-product="Tas Anyaman">+</button></div></div>
+          </article>
+          <article class="product" data-category="Makanan" data-name="Sambal Rumahan">
+            <div class="product-image"><img src="images/sambal-rumahan.jpg" alt="Sambal rumahan"></div>
+            <div class="product-info"><div class="category">Makanan</div><h3>Sambal Rumahan</h3><div class="product-desc">Pelengkap makan dengan cita rasa pedas yang menggugah selera.</div><div class="product-bottom"><span class="price">Rp22.000</span><button class="add" aria-label="Pilih Sambal Rumahan" data-product="Sambal Rumahan">+</button></div></div>
+          </article>
+          <article class="product" data-category="Fashion" data-name="Totebag Kanvas">
+            <div class="product-image"><img src="images/totebag-kanvas.jpg" alt="Totebag kanvas"></div>
+            <div class="product-info"><div class="category">Fashion</div><h3>Totebag Kanvas</h3><div class="product-desc">Tas serbaguna yang simpel untuk sekolah, kuliah, dan bepergian.</div><div class="product-bottom"><span class="price">Rp42.000</span><button class="add" aria-label="Pilih Totebag Kanvas" data-product="Totebag Kanvas">+</button></div></div>
+          </article>
+          <article class="product" data-category="Kerajinan" data-name="Lilin Aromaterapi">
+            <div class="product-image"><img src="images/lilin-aromaterapi.jpg" alt="Lilin aromaterapi"></div>
+            <div class="product-info"><div class="category">Kerajinan</div><h3>Lilin Aromaterapi</h3><div class="product-desc">Dekorasi mungil untuk membantu suasana ruang terasa nyaman.</div><div class="product-bottom"><span class="price">Rp30.000</span><button class="add" aria-label="Pilih Lilin Aromaterapi" data-product="Lilin Aromaterapi">+</button></div></div>
+          </article>
+          <article class="product" data-category="Minuman" data-name="Teh Herbal">
+            <div class="product-image"><img src="images/teh-herbal.jpg" alt="Teh herbal serai"></div>
+            <div class="product-info"><div class="category">Minuman</div><h3>Teh Herbal</h3><div class="product-desc">Minuman hangat dengan aroma herbal untuk waktu bersantai.</div><div class="product-bottom"><span class="price">Rp25.000</span><button class="add" aria-label="Pilih Teh Herbal" data-product="Teh Herbal">+</button></div></div>
+          </article>
+          <div class="empty" id="emptyState">Produk tidak ditemukan. Coba kata kunci atau kategori lain.</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="tentang">
+      <div class="about-grid">
+        <div class="about-card"><div class="big">♡</div><div><h2 style="font-size:28px;margin:0 0 8px;color:#fff">Kecil usahanya,<br>besar maknanya.</h2><small>Setiap pembelian ikut mendukung pelaku usaha lokal.</small></div></div>
+        <div class="about-copy"><div class="section-kicker">Tentang UMKM Lokal</div><h2>Lebih dekat dengan produk sekitar kita.</h2><p>UMKM Lokal adalah contoh website katalog yang membantu menampilkan berbagai produk usaha mikro, kecil, dan menengah dalam satu halaman. Pengunjung dapat melihat galeri produk, mengetahui kategori, mencari nama produk, dan memilih produk yang menarik.</p><p>Website ini merupakan contoh proyek pembelajaran. Nama toko, daftar produk, harga, dan informasi kontak dapat diubah sesuai kebutuhan usaha sebenarnya.</p><div class="stats"><div><strong>8+</strong><span>Contoh produk</span></div><div><strong>4</strong><span>Kategori</span></div><div><strong>100%</strong><span>Contoh lokal</span></div></div></div>
+      </div>
+    </section>
+
+    <section class="contact" id="kontak">
+      <div><div class="section-kicker">Hubungi kami</div><h2>Punya pertanyaan?</h2><p>Isi formulir ini untuk menyiapkan pesan. Untuk penggunaan nyata, hubungkan formulir dengan email atau WhatsApp toko dan ganti informasi contoh dengan kontak pemilik usaha.</p><p><strong>Nama toko:</strong> UMKM Lokal by : ZivannaL<br><strong>Email:</strong> umknlokalbyzivanna@gmail.com</p></div>
+      <form class="contact-form" id="contactForm">
+        <input id="visitorName" type="text" placeholder="Nama kamu" required>
+        <input id="visitorEmail" type="email" placeholder="Alamat email" required>
+        <textarea id="visitorMessage" placeholder="Pesan kamu..." required></textarea>
+        <button class="btn" type="submit">Siapkan Pesan ↗</button>
+      </form>
+    </section>
+  </main>
+  <footer>© 2026 UMKM Lokal. Website katalog produk untuk pembelajaran HTML, CSS, dan JavaScript.</footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
